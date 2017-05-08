@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">  
+    <title>Distribución</title>        
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Yantramanav:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">   
+        <div class="clase-titulo">
+            <h1>Distribución de elementos / CSS3</h1>
+        </div>
+
+        <div class="leccion" id="block">
+            <div>
+                <div class="leccion-titulo">
+                    <h2 class="titulo">display: block</h2>
+                </div>
+                <div class="leccion-contenido">
+                    <div class="rect bloque">
+                    </div>
+                    <div class="cuadro bloque">
+                    </div>
+                    <div class="borde rect bloque">
+                        <div class="cuadro bloque centrado">
+                        </div>
+                    </div>
+                    <div class="cuadro bloque centrado borde">
+                    </div>
+                    <div class="rect bloque bloque-derecha borde ">
+                    </div>
+                    <div class="borde rect-2 bloque centrado">
+                        <div class="cuadro bloque centrado">
+                        </div>
+                        <div class="cuadro bloque">
+                        </div>
+                    </div>
+                </div>
+                <div class="leccion-explicacion">
+                    <div>
+                        <p>El tipo <code>display: block</code> se usa para colocar elementos uno debajo de otro, no pueden ir dos elementos de tipo bloque en la misma línea</p>
+                        
+                        <p>Al usar este atributo, también estamos indicando que el elemento tiene un tamaño definido o bien se lo podemos indicar manualmente al colocar la propiedad de <code>width</code> y <code>height</code>. 
+                        </p>
+
+                        <p>Este tipo de elementos se pueden colocar centrados o posicionados a la derecha o izquierda con base a los márgenes de sus contenedores.
+                        </p>
+
+                        <p>Es importante destacar que si se aplica un borde a un elemento de cualquier tipo no importa el atributo de <code>display</code> que contenga, este borde contará como parte del tamaño total, esto quiere decir que si un elemento tiene un ancho <code>100px</code> con un borde de <code>2px</code>, el tamaño total sería de <code>104px</code>. </p>
+
+                        <p>Para que un elemento se pueda escalar de acuerdo al tamaño de la pantalla es importante declarar un ancho basado en porcentajes, de esta manera al hacer la pantalla más chica el elemento se acomodará de acuerdo al ancho de la pantalla, pero ¿qué pasa si la pantalla es muy grande y no queremos que el elemento ocupe todo el largo de esta? Para eso existe el atributo de <code>max-width</code>, de esta forma se le indica al elemento que puede crecer hasta llegar a un máximo que se le establece, por lo tanto al usar el atributo <code>width</code> con porcentajes y <code>max-width</code> con un tamaño establecido en pixeles, el elemento tendrá un límite a la hora de crecer más no un límite a la hora de hacerse pequeño y puede ocupar el <code>100%</code> en pantallas más pequeñas.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <div class="leccion" id="table">
+            <div>
+                <div class="leccion-titulo">
+                    <h2 class="titulo">display: table</h2>
+                </div>
+                <div class="leccion-contenido">
+                    <div class="tabla completo borde">
+                        <div class="rect-3 bloque"></div>
+                    </div>
+                </div>
+                <div class="leccion-explicacion">
+                    <div>
+                        <p>El tipo <code>display: table</code> se usa para hacer una distribución de los elementos hijos conforme a una tabla, esto quiere decir que se puede colocar un elemento detrás de otro a manera de filas con varias columnas.</p>
+
+                        <p>Es importante destacar que un elemento con el atributo <code>table</code>, no puede calcular su tamaño por sí solo, es necesario que se le indique de manera manual este atributo. </p>    
+
+                        <p>Para poder usar este atributo correctamente es necesario que los hijos del elemento tengan un atributo de <code>display</code> en específico para que pueda tener un funcionamiento correcto.</p>                        
+                                
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <div class="leccion" id="inline-block">
+            <div>
+                <div class="leccion-titulo">
+                    <h2 class="titulo">display: inline-block</h2>
+                </div>
+                <div class="leccion-contenido">
+                    <div class="bloque">
+                        <div class="en-linea en-medio">
+                            <div class="rect bloque"></div>
+                            <div class="cuadro"></div>
+                        </div>
+                        <div class="rect-2 en-linea en-medio"></div>
+                        <div class="rect en-linea en-medio"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.1</p></div>
+                    <div class="tabla rect-3">
+                        <div class="rect-2 en-linea"></div>
+                        <div class="rect en-linea"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.2</p></div>
+                    <div class="tabla rect-3">
+                        <div class="rect-2 en-linea"></div>
+                        <div class="rect en-linea"></div>
+                        <div class="rect en-linea"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.3</p></div>
+                    <div class="tabla completo">
+                        <div class="rect en-linea borde en-arriba"></div>
+                        <div class="cuadro-2 en-linea borde en-arriba"></div>
+                        <div class="rect en-linea borde en-arriba"></div>
+                        <div class="rect en-linea borde en-arriba"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.4</p></div>
+                    <div class="tabla completo">
+                        <div class="rect en-linea borde en-medio"></div>
+                        <div class="cuadro-2 en-linea borde en-medio"></div>
+                        <div class="rect en-linea borde en-medio"></div>
+                        <div class="rect en-linea borde en-medio"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.5</p></div>
+                    <div class="tabla completo">
+                        <div class="rect en-linea borde en-abajo"></div>
+                        <div class="cuadro-2 en-linea borde en-abajo"></div>
+                        <div class="rect en-linea borde en-abajo"></div>
+                        <div class="rect en-linea borde en-abajo"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.6</p></div>
+                    <div class="tabla completo">
+                        <div class="cuadro mitad en-linea"></div>
+                        <div class="cuadro naranja mitad en-linea"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.7</p></div>
+                    <div class="tabla completo">
+                        <div class="cuadro mitad en-linea borde"></div>
+                        <div class="cuadro naranja mitad en-linea borde"></div>
+                    </div>
+                    <div class="separador-figuras"><p>Figura 3.8</p></div>
+                </div>
+                <div class="leccion-explicacion">
+                    <div>
+                        <p>El tipo <code>display: inline-block</code> se usa para colocar elementos dentro de una misma línea, sucede lo mismo que un el atributo <code>table</code>, se le tiene que declarar el tamaño de su contenido manualmente. Puedes lograr lo mismo que con el atributo <code>float</code>, pero aquí el contenedor padre puede calcular su tamaño con base a los hijos <code>inline-block</code>. También este contenedor padre juega un papel importante, porque los elementos <code>inline-block</code> se pueden comportar de distinta manera acorde con el atributo <code>display</code> que contenga el padre.</p> 
+
+                        <p>En la figura 3.1 se pueden ver dos elementos con atributos <code>inline-block</code> y un contenedor padre con el atributo <code>block</code>. Estos elementos se muestran en la misma línea pero hay un pequeño espacio entre ellos, esto es porque el contenedor padre tiene un atributo <code>display: block</code>.</p> 
+
+                        <p>En la figura 3.2 se pueden ver los mismos elementos, pero la diferencia es que ahora no hay un espacio en blanco entre ellos, esto es porque el padre contenedor tiene un atributo <code>display: table</code>. Es aquí que se puede usar el atributo <code>table</code> para el padre, de esta forma los hijos se comportan como si fueran columnas dentro de la tabla. Si los elementos no encajan dentro de la misma línea, estos son colocados por debajo justo como pasa en la figura 3.3.</p>
+
+                        <p>Otro atributo que puede acompañar a los elementos que contengan el atributo de <code>inline-block</code>, es el de <code>vertical-align: middle | top | bottom</code>. Este atributo sirve para acomodar los elementos con base a su posicionamiento vertical, porque puede haber unos más grandes que los otros como pasa en la figura 3.4, entonces se les puede declarar si se desea que estos se acomoden a partir del margen de arriba con el atributo <code>vertical-align: top</code>, el otro es que se acomoden a manera de que queden centrados verticalmente <code>vertical-align: middle</code>, independientemente del tamaño entre ellos como en la figura 3.5. Por último está el posicionamiento con base al margen de abajo <code>vertical-align: bottom</code> como en la figura 3.6.</p>
+
+                        <p>Con el atributo <code>inline-block</code> puedes convertir un elemento en dos secciones del mismo tamaño porque se le puede declarar un atributo de tipo <code>width</code> con base en algún porcentaje como <code>50%</code> tal como se distribuyeron en la figura 3.7. Un error que se puede llegar a cometer es declarar un <code>width: 50%</code> y además agregar un atributo de tipo <code>border</code>. Como se había mencionado en <code>display: block</code>, el borde cuenta a la hora de calcular el tamaño del elemento, pero el problema es que se cuenta como algo extra, no dentro del tamaño declarado en <code>width</code>, por eso en la figura 3.8 los elementos sobrepasaron el <code>100%</code> del tamaño porque el borde está agregando un extra y hace que el segundo elemento se tire hacia abajo en orden de que puedan entrar los dos elementos en el padre. </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="distribucion.css" type="text/css">

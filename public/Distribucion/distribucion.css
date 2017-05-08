@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 250px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+}
+
+.titulo {
+    font-family: 'Courgette', cursive;
+    letter-spacing: 2px;
+    font-size: 132px;
+    line-height: 180px;
+    width: 100%;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 512px) {
+    .titulo {
+        font-size: 5em;
+        line-height: 1em;
+    }
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+.rect {
+    width: 100%;
+    max-width: 320px;
+    min-height: 200px;
+    background: rgb(39, 109, 79);    
+}
+
+.rect-2 {
+    width: 100%;
+    max-width: 640px;
+    min-height: 200px;
+    background: rgb(69, 139, 79);    
+}
+
+.rect-3 {
+    width: 100%;
+    max-width: 960px;
+    min-height: 200px;
+    background: rgb(99, 139, 79);    
+}
+
+.cuadro {
+    width: 100%;
+    max-width: 200px;
+    min-height: 200px;
+    background: rgb(28, 88, 132);
+}
+
+.cuadro-2 {
+    width: 100%;
+    max-width: 400px;
+    min-height: 400px;
+    background: rgb(58, 88, 162);
+}
+
+.cuadro-3 {
+    width: 100%;
+    max-width: 600px;
+    min-height: 600px;
+    background: rgb(18, 78, 112);
+}
+
+.borde {
+    border: 1px solid black;
+}
+
+.bloque {
+    display: block;    
+}
+
+.centrado {
+    margin: 0 auto;
+}
+
+.bloque-derecha {
+    margin-left: auto;
+}
+
+.tabla {
+    display: table;
+}
+
+.completo {
+    width: 100%;
+    background: rgb(200, 210, 230);
+}
+
+.en-linea {
+    display: inline-block;
+}
+
+.en-medio {
+    vertical-align: middle;
+}
+
+.en-arriba {
+    vertical-align: top;
+}
+
+.en-abajo {
+    vertical-align: bottom;
+}
+
+.mitad {
+    width: 50%;
+    max-width: 50%;
+}
+
+.naranja {
+    background: rgb(109, 33, 33);
+}
+
+#container {
+    max-width: 1444px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.clase-titulo {
+    width: 96%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.leccion {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10%;
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+.leccion-titulo {
+    margin: 0 auto;
+    line-height: 31px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5%;
+}
+
+.leccion-contenido {
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    border-left: 2px dotted #333;    
+    border-right: 2px dotted #333;   
+    background: rgb(245, 245, 245); 
+}
+
+.leccion-explicacion {
+    max-width: 1024px;
+    display: block;
+    margin: 0 auto;    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.leccion-explicacion > div {
+    max-width: 580px;
+}
+
+.separador-figuras {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid rgb(33, 33, 33);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.separador-figuras > p {
+    font-weight: 500;
+    text-align: right;
+    padding-right: 10px;
+}
